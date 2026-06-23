@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <title>이영규 ♥ 현서연 결혼합니다</title>
+  <link rel="preload" as="image" href="./images/hero-optimized.jpg" fetchpriority="high" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #F7F4EF;
+      --ivory: #FDFBF8;
+      --stone: #C9BFB0;
+      --taupe: #9E9082a;
+      --bark: #5C4F42;
+      --charcoal: #2E2A26;
+      --accent: #7A6A5A;
+      --gold: #B89B72;
+      --gold-light: #D4BC96;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      font-family: 'Noto Sans KR', sans-serif;
+      color: var(--charcoal);
+      max-width: 480px;
+      margin: 0 auto;
+      overflow-x: hidden;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100svh;
+      min-height: 600px;
+      background-color: #d8d0c8;
+      background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABIMDhAOCxIQDxAUExIVGy0dGxkZGzcoKiEtQjpFREA6Pz5IUWhYSE1iTj4/WntcYmtvdHZ0RleAiX9xiGhydHD/2wBDARMUFBsYGzUdHTVwSz9LcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHD/wAARCAAxACADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoWs1TlR2FHkq45Az9KvuU/iI6d6qzSQoCQ659DVq4iq8KDoB+VUZJFhbJAGD6Ut3egLhMk+npWRM0srZdya1jBvcylUS2Okj1yCaVlPllBgbgw9KW8SM/MNijODu9+leeDzSTkMM+1WF+03cqwxmSYgcLg54rnUmjRq50N7JDGrhJFMgOOOgNZbzPDKgkmVg3JK/MFGcVQkmlBKuWBxtKtwR9aq+ZhiAeKbqSZKgjo/NX1ps989rC0sGDJwAGHFUzL7ZqOVvMj2kH14Nc60dzW5uXbg29s8ijc67jxxmqJMR/gU8/3apPcTuqgvkKMAHtSLJIOpzVPV3FcT+EfSloooYCelOHWiigR//Z");
+      background-position: center top;
+      background-size: cover;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding-bottom: 60px;
+    }
+
+    .hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      /* 교체용 이미지 경로: images/hero.jpg */
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(17, 27, 35, 0.52) 0%,
+          rgba(17, 27, 35, 0.28) 22%,
+          rgba(17, 27, 35, 0) 45%
+        ),
+        linear-gradient(
+          to bottom,
+          rgba(0,0,0,0) 55%,
+          rgba(30,24,18,0.55) 100%
+        );
+    }
+
+    .hero-text {
+      position: absolute;
+      top: clamp(48px, 8vh, 88px);
+      left: 24px;
+      right: 24px;
+      z-index: 2;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero-text > * {
+      opacity: 0;
+      animation: fadeUp 1.1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    .hero-text > :nth-child(1) { animation-delay: 0.15s; }
+    .hero-text > :nth-child(2) { animation-delay: 0.35s; }
+    .hero-text > :nth-child(3) { animation-delay: 0.55s; }
+
+    .hero-eyebrow {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 10px;
+      font-weight: 300;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.92);
+      margin-bottom: 18px;
+    }
+
+    .hero-names {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 36px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .hero-names .ampersand {
+      font-size: 28px;
+      color: #fff;
+      margin: 0 6px;
+    }
+
+    .hero-date {
+      font-size: 12px;
+      font-weight: 300;
+      letter-spacing: 3px;
+      color: rgba(255,255,255,0.94);
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      color: rgba(255,255,255,0.6);
+      font-size: 9px;
+      letter-spacing: 2px;
+      animation: bounce 2s infinite;
+    }
+
+    .hero-scroll svg { opacity: 0.6; }
+
+    /* ── SECTION BASE ── */
+    section {
+      padding: 64px 32px;
+    }
+
+    .section-label {
+      font-size: 9px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 28px;
+      display: block;
+    }
+
+    .divider {
+      width: 32px;
+      height: 1px;
+      background: var(--gold);
+      margin: 0 auto 28px;
+      opacity: 0.6;
+    }
+
+    /* ── TAGLINE ── */
+    .tagline-section {
+      background: var(--ivory);
+      text-align: center;
+      padding: 72px 32px;
+    }
+
+    .tagline-ko {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--taupe);
+      line-height: 2;
+      letter-spacing: 0.5px;
+      margin-bottom: 32px;
+    }
+
+    .tagline-main {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--bark);
+      line-height: 1.8;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── INVITATION ── */
+    .invite-section {
+      background: var(--cream);
+      text-align: center;
+    }
+
+    .invite-body {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--accent);
+      line-height: 2.2;
+      letter-spacing: 0.3px;
+    }
+
+    .invite-highlight {
+      display: block;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--bark);
+      margin: 20px 0 8px;
+    }
+
+    /* ── PHOTOS ── */
+    .photo-section {
+      padding: 0;
+      background: var(--charcoal);
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+
+    .photo-grid .photo-item {
+      overflow: hidden;
+      position: relative;
+      padding: 0;
+      border: 0;
+      background: var(--charcoal);
+      cursor: zoom-in;
+      aspect-ratio: 2 / 3;
+    }
+
+    .photo-grid .photo-item.wide {
+      grid-column: 1 / -1;
+      aspect-ratio: 3 / 2;
+    }
+
+    .photo-grid .photo-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+
+    .photo-grid .photo-item:hover img {
+      transform: scale(1.04);
+    }
+
+    .photo-grid .photo-item:focus-visible {
+      outline: 2px solid var(--gold-light);
+      outline-offset: -4px;
+    }
+
+    .photo-label {
+      position: absolute;
+      bottom: 12px;
+      left: 14px;
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,0.7);
+      text-transform: uppercase;
+    }
+
+    /* ── PHOTO LIGHTBOX ── */
+    .photo-lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(18, 16, 14, 0.96);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+      touch-action: pan-y;
+    }
+
+    .photo-lightbox.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .lightbox-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      user-select: none;
+      -webkit-user-drag: none;
+      transform: translate(-50%, -50%);
+      transition:
+        transform 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.34s ease;
+      will-change: transform, opacity;
+    }
+
+    .lightbox-stage {
+      position: relative;
+      overflow: hidden;
+      width: calc(100% - 48px);
+      height: calc(100% - 104px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox-button {
+      position: absolute;
+      z-index: 1;
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border: 0;
+      border-radius: 50%;
+      color: #fff;
+      background: rgba(255,255,255,0.12);
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .lightbox-button:hover { background: rgba(255,255,255,0.22); }
+    .lightbox-button:focus-visible { outline: 2px solid var(--gold-light); }
+    .lightbox-close { top: 18px; right: 18px; font-size: 24px; }
+    .lightbox-prev { left: 10px; top: 50%; transform: translateY(-50%); }
+    .lightbox-next { right: 10px; top: 50%; transform: translateY(-50%); }
+
+    .lightbox-count {
+      position: absolute;
+      bottom: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,0.7);
+    }
+
+    /* ── DATE & PLACE ── */
+    .date-section {
+      background: var(--ivory);
+      text-align: center;
+    }
+
+    .date-big {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 42px;
+      font-weight: 300;
+      color: var(--charcoal);
+      letter-spacing: -1px;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .date-sub {
+      font-size: 11px;
+      font-weight: 300;
+      color: var(--taupe);
+      letter-spacing: 3px;
+      margin-bottom: 40px;
+    }
+
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      text-align: left;
+      margin-bottom: 20px;
+      padding: 0 8px;
+    }
+
+    .info-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--stone);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      opacity: 0.7;
+    }
+
+    .info-icon svg { width: 16px; height: 16px; stroke: var(--bark); fill: none; }
+
+    .info-label {
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: var(--taupe);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .info-value {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 14px;
+      color: var(--charcoal);
+      line-height: 1.7;
+      font-weight: 400;
+    }
+
+    .map-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 28px;
+      padding: 13px 28px;
+      border: 1px solid var(--gold);
+      border-radius: 2px;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: var(--bark);
+      text-decoration: none;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .map-btn:hover {
+      background: var(--gold);
+      color: #fff;
+    }
+
+    /* ── VOWS ── */
+    .vows-section {
+      background: var(--bark);
+      text-align: center;
+      color: var(--cream);
+      padding: 72px 36px;
+    }
+
+    .vows-section .section-label { color: var(--gold-light); }
+    .vows-section .divider { background: var(--gold-light); }
+
+    .vows-text {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 2.4;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 0.5px;
+    }
+
+    .vows-text em {
+      display: block;
+      font-style: normal;
+      font-weight: 500;
+      color: var(--gold-light);
+      font-size: 13px;
+      margin-top: 28px;
+      letter-spacing: 1px;
+    }
+
+    /* ── TIMELINE / MEMORY ── */
+    .memory-section {
+      background: var(--cream);
+      padding: 64px 32px;
+    }
+
+    .memory-section .section-label { text-align: center; }
+    .memory-section .divider { }
+
+    .timeline {
+      position: relative;
+      margin-top: 16px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, var(--stone) 15%, var(--stone) 85%, transparent);
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 40px;
+      position: relative;
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .timeline-item.visible { opacity: 1; transform: translateY(0); }
+
+    .timeline-item:nth-child(odd) {
+      flex-direction: row-reverse;
+      text-align: right;
+    }
+
+    .timeline-item:nth-child(even) {
+      flex-direction: row;
+      text-align: left;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 50%;
+      top: 8px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      transform: translateX(-50%);
+      box-shadow: 0 0 0 3px var(--cream), 0 0 0 4px var(--stone);
+    }
+
+    .timeline-content {
+      width: calc(50% - 24px);
+    }
+
+    .timeline-img {
+      width: 100%;
+      aspect-ratio: 3/2;
+      object-fit: cover;
+      border-radius: 2px;
+      margin-bottom: 10px;
+      /* 교체용 이미지 경로 예시:
+         첫 만남: images/memory1.jpg
+         클라이밍: images/memory2.jpg
+         6년의 계절: images/memory3.jpg
+         작은 결혼: images/memory4.jpg */
+      background: var(--stone);
+      display: block;
+      min-height: 90px;
+    }
+
+    .timeline-title {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--bark);
+      letter-spacing: 0.5px;
+    }
+
+    /* ── CLOSING ── */
+    .closing-section {
+      background: var(--ivory);
+      text-align: center;
+      padding: 72px 32px 80px;
+    }
+
+    .closing-names {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--charcoal);
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .closing-names span {
+      color: var(--gold);
+      font-size: 18px;
+      margin: 0 10px;
+    }
+
+    .closing-msg {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--taupe);
+      line-height: 2.2;
+      letter-spacing: 0.3px;
+    }
+
+    .closing-deco {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 28px;
+      color: var(--gold-light);
+      margin: 32px 0 24px;
+      letter-spacing: 8px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--charcoal);
+      text-align: center;
+      padding: 24px;
+    }
+
+    footer p {
+      font-size: 9px;
+      color: rgba(255,255,255,0.3);
+      letter-spacing: 2px;
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeOnly {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%       { transform: translateX(-50%) translateY(6px); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .text-reveal {
+      opacity: 0;
+      filter: blur(3px);
+      transform: translateY(18px);
+      transition:
+        opacity 1s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 1s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+      transition-delay: var(--reveal-delay, 0ms);
+      will-change: opacity, filter, transform;
+    }
+
+    .text-reveal.visible {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0);
+    }
+
+    /* ── FLOATING DATE BADGE ── */
+    .date-badge {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--stone);
+      padding: 8px 14px;
+      border-radius: 2px;
+      text-align: center;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+
+    .date-badge.show { opacity: 1; }
+
+    .date-badge-mo {
+      font-size: 9px;
+      color: var(--taupe);
+      letter-spacing: 2px;
+      display: block;
+    }
+
+    .date-badge-day {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--charcoal);
+      line-height: 1;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero-text > * {
+        animation-name: fadeOnly !important;
+        animation-duration: 0.7s !important;
+      }
+
+      .reveal, .timeline-item, .text-reveal {
+        filter: none !important;
+        transform: none !important;
+        transition: opacity 0.6s ease !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 플로팅 날짜 배지 -->
+  <div class="date-badge" id="dateBadge">
+    <span class="date-badge-mo">2026 · 07</span>
+    <span class="date-badge-day">11</span>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <img class="hero-img" src="./images/hero-optimized.jpg" alt="이영규 현서연" fetchpriority="high" loading="eager" onerror="this.style.display='none'" />
+    <div class="hero-overlay"></div>
+
+    <div class="hero-text">
+      <p class="hero-eyebrow">We're Getting Married</p>
+      <h1 class="hero-names">
+        이영규<span class="ampersand">♥</span>현서연
+      </h1>
+      <p class="hero-date">2026 · 07 · 11 · SAT</p>
+    </div>
+
+    <div class="hero-scroll">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 3v10M4 9l4 4 4-4" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ── TAGLINE ── -->
+  <section class="tagline-section reveal">
+    <p class="tagline-ko">우리가 함께 오를 다음 길</p>
+    <div class="divider"></div>
+    <p class="tagline-main">
+      함께 벽을 오르던 저희가,<br />
+      이제 삶을 함께 오르려 합니다.
+    </p>
+  </section>
+
+  <!-- ── INVITATION ── -->
+  <section class="invite-section reveal">
+    <span class="section-label" style="text-align:center;display:block;">Invitation</span>
+    <div class="divider"></div>
+    <p class="invite-body">
+      첫 만남을 함께 기억하고,<br />
+      오랜 시간 곁에서 웃어주고<br />
+      응원해 준 친구들 덕분에<br />
+      저희의 이야기는<br />
+      더 따뜻하게 자랄 수 있었습니다.
+      <span class="invite-highlight">오는 7월 11일,</span>
+      저희의 시작을 함께해 준<br />
+      소중한 친구들 앞에서<br />
+      조용히 성혼선서를 하려 합니다.<br /><br />
+      편한 마음으로 와서<br />
+      저희의 작은 결혼을 축하해 주세요.
+    </p>
+  </section>
+
+  <!-- ── PHOTO GRID ── -->
+  <section class="photo-section">
+    <div class="photo-grid" aria-label="웨딩 사진 갤러리">
+      <button class="photo-item wide" type="button" aria-label="사진 1 크게 보기">
+        <img src="./images/1.png" alt="웨딩 사진 1" loading="lazy" />
+        <span class="photo-label">Our Story</span>
+      </button>
+      <button class="photo-item" type="button" aria-label="사진 2 크게 보기"><img src="./images/4.jpg" alt="웨딩 사진 2" loading="lazy" /></button>
+      <button class="photo-item" type="button" aria-label="사진 3 크게 보기"><img src="./images/5.jpg" alt="웨딩 사진 3" loading="lazy" /></button>
+      <button class="photo-item wide" type="button" aria-label="사진 4 크게 보기"><img src="./images/3.png" alt="웨딩 사진 4" loading="lazy" /></button>
+      <button class="photo-item" type="button" aria-label="사진 5 크게 보기"><img src="./images/6.png" alt="웨딩 사진 5" loading="lazy" /></button>
+      <button class="photo-item" type="button" aria-label="사진 6 크게 보기"><img src="./images/7.png" alt="웨딩 사진 6" loading="lazy" /></button>
+      <button class="photo-item wide" type="button" aria-label="사진 7 크게 보기"><img src="./images/2.png" alt="웨딩 사진 7" loading="lazy" /></button>
+      <button class="photo-item" type="button" aria-label="사진 8 크게 보기"><img src="./images/10.png" alt="웨딩 사진 8" loading="lazy" /></button>
+      <button class="photo-item" type="button" aria-label="사진 9 크게 보기"><img src="./images/11.png" alt="웨딩 사진 9" loading="lazy" /></button>
+      <button class="photo-item wide" type="button" aria-label="사진 10 크게 보기"><img src="./images/8.jpg" alt="웨딩 사진 10" loading="lazy" /></button>
+      <button class="photo-item wide" type="button" aria-label="사진 11 크게 보기"><img src="./images/9.jpg" alt="웨딩 사진 11" loading="lazy" /></button>
+    </div>
+  </section>
+
+  <div class="photo-lightbox" id="photoLightbox" role="dialog" aria-modal="true" aria-label="사진 크게 보기" aria-hidden="true">
+    <button class="lightbox-button lightbox-close" type="button" aria-label="닫기">&times;</button>
+    <button class="lightbox-button lightbox-prev" type="button" aria-label="이전 사진">&#10094;</button>
+    <div class="lightbox-stage">
+      <img class="lightbox-image" src="" alt="" />
+      <img class="lightbox-image" src="" alt="" aria-hidden="true" style="visibility:hidden;" />
+    </div>
+    <button class="lightbox-button lightbox-next" type="button" aria-label="다음 사진">&#10095;</button>
+    <p class="lightbox-count" aria-live="polite"></p>
+  </div>
+
+  <!-- ── DATE & PLACE ── -->
+  <section class="date-section reveal">
+    <span class="section-label" style="display:block;text-align:center;">Wedding Day</span>
+    <p class="date-big">07.11</p>
+    <p class="date-sub">2026 · Saturday · 19:00</p>
+    <div class="divider"></div>
+
+    <div class="info-row" style="justify-content:center;">
+      <div class="info-icon">
+        <svg viewBox="0 0 24 24" stroke-width="1.5">
+          <rect x="3" y="4" width="18" height="18" rx="2"/>
+          <line x1="3" y1="9" x2="21" y2="9"/>
+          <line x1="8" y1="2" x2="8" y2="6"/>
+          <line x1="16" y1="2" x2="16" y2="6"/>
+        </svg>
+      </div>
+      <div>
+        <p class="info-label">Date & Time</p>
+        <p class="info-value">2026년 7월 11일 토요일<br />오후 7시</p>
+      </div>
+    </div>
+
+    <div class="info-row" style="justify-content:center;">
+      <div class="info-icon">
+        <svg viewBox="0 0 24 24" stroke-width="1.5">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+          <circle cx="12" cy="9" r="2.5"/>
+        </svg>
+      </div>
+      <div>
+        <p class="info-label">Venue</p>
+        <p class="info-value">파티룸 도비의꿈 수원 인계점<br /><span style="font-size:12px;color:var(--taupe);">경기 수원시 팔달구<br />인계로 124번길 27-10 10층 1006호</span></p>
+      </div>
+    </div>
+
+    <div style="text-align:center;">
+      <a class="map-btn"
+         href="https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%ED%8C%94%EB%8B%AC%EA%B5%AC%20%EC%9D%B8%EA%B3%84%EB%A1%9C%20124%EB%B2%88%EA%B8%B8%2027-10%2010%EC%B8%B5%201006%ED%98%B8"
+         target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+          <circle cx="12" cy="9" r="2.5"/>
+        </svg>
+        지도 열기
+      </a>
+    </div>
+  </section>
+
+  <!-- ── VOWS ── -->
+  <section class="vows-section reveal">
+    <span class="section-label">Our Promise</span>
+    <div class="divider"></div>
+    <p class="vows-text">
+      높은 곳만 바라보기보다<br />
+      서로가 디딜 수 있는 자리를 살피며,<br /><br />
+      넘어질 것 같은 날에도<br />
+      가장 든든한 확보자가 되겠습니다.
+      <em>— 성혼선서</em>
+    </p>
+  </section>
+
+  <!-- ── MEMORY TIMELINE ── -->
+  <section class="memory-section">
+    <span class="section-label" style="text-align:center;display:block;">Memory</span>
+    <div class="divider"></div>
+    <p style="text-align:center;font-size:13px;color:var(--taupe);margin-bottom:40px;line-height:1.8;">우리의 시간</p>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <!-- 교체용: images/memory1.jpg -->
+          <img class="timeline-img" src="images/memory1.png" alt="첫 만남" onerror="this.style.background='#C9BFB0'" />
+          <p class="timeline-title">첫 만남</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          
+          <img class="timeline-img" src="images/memory2.jpg" alt="클라이밍" onerror="this.style.background='#B5AA9E'" />
+          <p class="timeline-title">클라이밍</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          
+          <img class="timeline-img" src="images/memory3.jpg" alt="6년의 계절" onerror="this.style.background='#C9BFB0'" />
+          <p class="timeline-title">6년의 계절</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <!-- 교체용: images/memory4.jpg -->
+          <img class="timeline-img" src="images/memory4.png" alt="작은 결혼" onerror="this.style.background='#B5AA9E'" />
+          <p class="timeline-title">작은 결혼</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CLOSING ── -->
+  <section class="closing-section reveal">
+    <p class="closing-deco">♥</p>
+    <p class="closing-names">이영규<span>·</span>현서연</p>
+    <p class="closing-msg">
+      저희 두 사람의 첫걸음에<br />
+      함께해 주셔서 감사합니다.
+    </p>
+    <p style="margin-top:32px;font-size:11px;color:var(--stone);letter-spacing:2px;">이영규 · 현서연 드림</p>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>2026 · 07 · 11 · LEE YOUNG-KYU ♥ HYUN SEO-YEON</p>
+  </footer>
+
+  <script>
+    // ── Intersection Observer: soft text reveal & timeline ──
+    const textRevealSelector = [
+      '.section-label', '.tagline-ko', '.tagline-main',
+      '.invite-body', '.invite-highlight', '.date-big', '.date-sub',
+      '.info-row', '.vows-text', '.memory-section > p',
+      '.timeline-title', '.closing-deco', '.closing-names',
+      '.closing-msg', '.closing-section > p:last-child'
+    ].join(', ');
+
+    document.querySelectorAll('section:not(.hero):not(.photo-section)').forEach((section) => {
+      section.querySelectorAll(textRevealSelector).forEach((element, index) => {
+        element.classList.add('text-reveal');
+        element.style.setProperty('--reveal-delay', `${Math.min(index * 90, 450)}ms`);
+      });
+    });
+
+    const revealEls = document.querySelectorAll('.reveal, .timeline-item, .text-reveal');
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          const delay = entry.target.classList.contains('timeline-item')
+            ? Array.from(entry.target.parentElement.children).indexOf(entry.target) * 120
+            : 0;
+
+          setTimeout(() => entry.target.classList.add('visible'), delay);
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+
+      // 숨겨진 초기 상태가 먼저 렌더링된 뒤 관찰을 시작해야 전환 효과가 보인다.
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => revealEls.forEach((element) => observer.observe(element)));
+      });
+    } else {
+      revealEls.forEach((element) => element.classList.add('visible'));
+    }
+
+    // ── Floating date badge ──
+    const badge = document.getElementById('dateBadge');
+    const hero  = document.querySelector('.hero');
+
+    window.addEventListener('scroll', () => {
+      const heroBottom = hero.getBoundingClientRect().bottom;
+      if (heroBottom < 0) {
+        badge.classList.add('show');
+      } else {
+        badge.classList.remove('show');
+      }
+    }, { passive: true });
+
+    // ── Photo lightbox ──
+    const photoItems = Array.from(document.querySelectorAll('.photo-item'));
+    const lightbox = document.getElementById('photoLightbox');
+    const lightboxImages = Array.from(lightbox.querySelectorAll('.lightbox-image'));
+    const lightboxCount = lightbox.querySelector('.lightbox-count');
+    const closeButton = lightbox.querySelector('.lightbox-close');
+    let activeLightboxImage = lightboxImages[0];
+    let standbyLightboxImage = lightboxImages[1];
+    let currentPhoto = 0;
+    let lastFocusedItem = null;
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let isPhotoSliding = false;
+
+    function showPhoto(index, direction = 0) {
+      const nextPhoto = (index + photoItems.length) % photoItems.length;
+      const sourceImage = photoItems[nextPhoto].querySelector('img');
+
+      if (!direction || !lightbox.classList.contains('open')) {
+        currentPhoto = nextPhoto;
+        activeLightboxImage.src = sourceImage.src;
+        activeLightboxImage.alt = sourceImage.alt;
+        activeLightboxImage.style.visibility = 'visible';
+        activeLightboxImage.style.opacity = '1';
+        activeLightboxImage.style.transform = 'translate(-50%, -50%)';
+        lightboxCount.textContent = `${currentPhoto + 1} / ${photoItems.length}`;
+        return;
+      }
+
+      if (isPhotoSliding) return;
+      isPhotoSliding = true;
+      currentPhoto = nextPhoto;
+
+      const enteringPosition = direction > 0
+        ? 'translate(50%, -50%)'
+        : 'translate(-150%, -50%)';
+      const leavingPosition = direction > 0
+        ? 'translate(-150%, -50%)'
+        : 'translate(50%, -50%)';
+
+      standbyLightboxImage.src = sourceImage.src;
+      standbyLightboxImage.alt = sourceImage.alt;
+      standbyLightboxImage.style.transition = 'none';
+      standbyLightboxImage.style.visibility = 'visible';
+      standbyLightboxImage.style.opacity = '0.7';
+      standbyLightboxImage.style.transform = enteringPosition;
+
+      // 시작 위치를 먼저 렌더링한 뒤 두 이미지를 동시에 움직인다.
+      standbyLightboxImage.getBoundingClientRect();
+      standbyLightboxImage.style.transition = '';
+      activeLightboxImage.style.transition = '';
+      standbyLightboxImage.style.opacity = '1';
+      standbyLightboxImage.style.transform = 'translate(-50%, -50%)';
+      activeLightboxImage.style.opacity = '0.45';
+      activeLightboxImage.style.transform = leavingPosition;
+      lightboxCount.textContent = `${currentPhoto + 1} / ${photoItems.length}`;
+
+      window.setTimeout(() => {
+        activeLightboxImage.style.visibility = 'hidden';
+        activeLightboxImage.style.transition = 'none';
+        activeLightboxImage.style.opacity = '1';
+        activeLightboxImage.style.transform = 'translate(-50%, -50%)';
+
+        const previousImage = activeLightboxImage;
+        activeLightboxImage = standbyLightboxImage;
+        standbyLightboxImage = previousImage;
+        isPhotoSliding = false;
+      }, 430);
+    }
+
+    function openLightbox(index) {
+      lastFocusedItem = photoItems[index];
+      showPhoto(index);
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      closeButton.focus();
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (lastFocusedItem) lastFocusedItem.focus();
+    }
+
+    photoItems.forEach((item, index) => {
+      item.addEventListener('click', () => openLightbox(index));
+    });
+
+    closeButton.addEventListener('click', closeLightbox);
+    lightbox.querySelector('.lightbox-prev').addEventListener('click', () => showPhoto(currentPhoto - 1, -1));
+    lightbox.querySelector('.lightbox-next').addEventListener('click', () => showPhoto(currentPhoto + 1, 1));
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox || event.target.classList.contains('lightbox-stage')) closeLightbox();
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (!lightbox.classList.contains('open')) return;
+      if (event.key === 'Escape') closeLightbox();
+      if (event.key === 'ArrowLeft') showPhoto(currentPhoto - 1, -1);
+      if (event.key === 'ArrowRight') showPhoto(currentPhoto + 1, 1);
+    });
+
+    lightbox.addEventListener('touchstart', (event) => {
+      if (event.changedTouches.length !== 1) return;
+      touchStartX = event.changedTouches[0].clientX;
+      touchStartY = event.changedTouches[0].clientY;
+    }, { passive: true });
+
+    lightbox.addEventListener('touchend', (event) => {
+      if (event.changedTouches.length !== 1) return;
+      const distanceX = event.changedTouches[0].clientX - touchStartX;
+      const distanceY = event.changedTouches[0].clientY - touchStartY;
+
+      // 세로 스크롤은 유지하고, 분명한 좌우 스와이프만 사진 이동으로 처리한다.
+      if (Math.abs(distanceX) < 50 || Math.abs(distanceX) <= Math.abs(distanceY)) return;
+      showPhoto(
+        distanceX > 0 ? currentPhoto - 1 : currentPhoto + 1,
+        distanceX > 0 ? -1 : 1
+      );
+    }, { passive: true });
+  </script>
+</body>
+</html>
